@@ -1,11 +1,14 @@
 #color {
-  width: 80px;
-  height: 80px;
+  width: 101px;
+  height: 40px;
+  position: relative;
+  top: -40px;
 }
 
 #status {
   border: 1px solid black;
   display: inline;
-  padding: 0.5rem 0.5rem;
-  position: absolute;
+  padding: 0.1rem 1rem 0.1rem 0.3rem;
+  position: relative;
+  top: -20px;
 }
