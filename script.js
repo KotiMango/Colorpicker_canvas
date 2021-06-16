@@ -84,7 +84,7 @@ const drawPallete = () => {
 drawPallete();
 //fetching mouse location and the pixel which it sits on
 canvas.addEventListener(
-  "mousemove",
+  "click",
   (e) => {
     let eventLocation = getEventLocation(canvas, e);
     //pixel mouse sits on
