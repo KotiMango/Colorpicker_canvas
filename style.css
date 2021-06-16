@@ -1,0 +1,11 @@
+#color {
+  width: 80px;
+  height: 80px;
+}
+
+#status {
+  border: 1px solid black;
+  display: inline;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+}
