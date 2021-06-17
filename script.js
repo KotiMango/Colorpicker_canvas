@@ -3,6 +3,7 @@ const canvas = document.getElementById("canvas");
 
 //element location
 const getElementPosition = (obj) => {
+  //reseting coordinates
   let cordLeft = 0,
     cordTop = 0;
   if (obj.offsetParent != null) {
@@ -14,7 +15,8 @@ const getElementPosition = (obj) => {
   }
 };
 
-//mouse location
+//You take the mouse position,
+//and then subtract it from the parent element's offset position.
 const getEventLocation = (element, e_vent) => {
   const posit = getElementPosition(element);
   return {
@@ -23,6 +25,7 @@ const getEventLocation = (element, e_vent) => {
   };
 };
 
+//Function takes rgb returns fractional hsl
 function rgbToHsl(r, g, b) {
   (r /= 255), (g /= 255), (b /= 255);
 
@@ -74,10 +77,10 @@ const drawPallete = () => {
 
   workCanvas.scale(0.39607, 0.39607);
   workCanvas.fillStyle = gradientCanvasV;
-  workCanvas.fillRect(0, 0, 255, 255);
+  workCanvas.fillRect(0, 10, 255, 255);
   workCanvas.fillStyle = gradientCanvasH;
   workCanvas.globalCompositeOperation = "multiply";
-  workCanvas.fillRect(0, 0, 255, 255);
+  workCanvas.fillRect(0, 10, 255, 255);
   workCanvas.globalCompositeOperation = "multiply";
 };
 
